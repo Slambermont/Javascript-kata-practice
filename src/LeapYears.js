@@ -1,10 +1,6 @@
 function leap(year){
     if(year % 4 === 0) {
-    if (year % 100 === 0 && year % 400 !== 0) {
-      return false
-    } else {
-      return true
-    }
+    return (year % 100 === 0 && year % 400 !== 0) ? false : true
   } else {
     return false
   }
